@@ -74,7 +74,7 @@ INFOMDCSBS Cheat Sheet - Created by Tim Rentenaar
 \textbf{Estimate:} The specific value obtained from a given method and dataset.\\
 \textbf{ACE0:} Average Causal Effect for the untreated\\
 \textbf{ACE1:} Average Causal Effect for the treated\\
-\textbf{Standardized Mean Difference (SMD):} \\$\Delta Z = \frac{(\overline{Z} | X = 1)-(\overline{Z} | X = 0)}{\sqrt{((S^2 | X = 1)+(S^2 | X = 0)) / 2}}$ ; Where $Z|X=x$ is the sample mean in condition $X=x$, and $S^2|X=x$ is the sample variance in group X=x.\\
+\textbf{Standardized Mean Difference (SMD):} \\$\Delta Z = \frac{(\overline{Z} | X = 1)-(\overline{Z} | X = 0)}{\sqrt{((S^2 | X = 1)+(S^2 | X = 0)) / 2}}$ ; Where $\overline{Z}|X=x$ is the sample mean in condition $X=x$, and $S^2|X=x$ is the sample variance in group X=x.\\
 \textbf{4 main strategies when controling for covariates:}\\
 \textbf{No confounders included:} Naive approach (Method 1)\\
 \textbf{Model the relation between confounders (Z) and outcome (Y):} Goal is to account for confounding through including confounders (Methods 2 and 3)\\
@@ -185,7 +185,7 @@ interest; Testing whether something is invariant may be hard; Can’t learn full
 \underline{\textbf{Lecture 6: Joint Treatment Effects}}\\
 \textbf{Longitudinal Process:} Exposure $X_t$, Covariates $L_t$, and Outcome $Y_t$, can take on varying values over time. Unvarying covariates $C$, stay the same over time and affect the process the same at each time point. Each $X_t$, $Y_t$, $L_t$ points into each $X_{t+1}$, $Y_{t+1}$, $L_{t+1}$.\\
 \textbf{Point treatment:} All paths that lead from one exposure to the final outcome. Example: all paths $X_1 \rightarrow Y_4$ or $X_3 \rightarrow Y_4$.\\
-\textbf{Joint Effect:} The effect of each exposure on the outcome not through subsequent exposure. “Joint” refers to “interventions” at multiple time points combined,\\
+\textbf{Joint Effect:} The effect of each exposure on the outcome not through subsequent exposure. “Joint” refers to “interventions” at multiple time points combined.\\
 \textbf{Exposure regimes (static):} Predetermined rules that determine the value of a time-varying exposure for all time points jointly. For example: $\{X_1 = 2, X_2 = 1, X_3 = 0\}$ shortly represented as $\{2, 1, 0\}$\\
 \textbf{Joint effect (in terms of regimes):} A contrast of outcomes that follow from two different exposure regimes. For example, for binary exposure, the always-exposed versus never-exposed effect can be represented as $Y^{\{1, 1, 1\}}$ versus $Y^{\{0, 0, 0\}}$\\
 \textbf{Controlled Direct Effects (CDE):} Joint effects are a collection of controlled direct effects. A CDE is the effect of $X_t$ on $Y_T$,
