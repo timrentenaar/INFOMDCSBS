@@ -222,7 +222,7 @@ unmediated by future exposure, $X_{t+1}$, $X_{t+2}$, etc\\
 \textbf{Intensive Longitudinal Data:} Many repeated measures. (e.g. daily diary, experience sampling method, ecological momentary assessment, real-time data capture, event-based measurements, observational measurements)\\
 \textbf{Multilevel modeling:} Study relations in nested data. Within-person level: $y_{it} = \alpha_i + \beta_i x_{it} + e_{it}$; Between-person level: Random intercept: $\alpha_i = \gamma_{00} + u_{0i}$, Random slope: $\beta_i = \gamma_{10} + u_{1i}$, Fixed slope: $\beta_i = \gamma_{10}$.\\
 \textbf{Dealing with nested structure in the data:} The nested structure of multilevel data implies that there may be different relations within the clusters and between the clusters. Proposed solutions to get to the within-cluster relation are: Difference scores for both $y_{it}$ and $x_{it}$ then, constants drop out; Including a dummy variable for each person separately; Centering both $y_{it}$ and $x_{it}$ per person before the analysis. Another solution is based on cluster-mean centering the predictor in a multilevel model.\\
-\textbf{Cluster-mean centering:} Within-person level (with a fixed slope): $\gamma_{it} = \alpha_i + \beta_i^{(w) (x_{it}-\overline{x}_{i} + e_{it}}$\\
+\textbf{Cluster-mean centering:} Within-person level (with a fixed slope): $\gamma_{it} = \alpha_i + \beta_i^{(w)} (x_{it}-\overline{x}_{i}) + e_{it}$\\
 
 
 \end{boxA}
